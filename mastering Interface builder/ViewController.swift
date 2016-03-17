@@ -36,7 +36,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("forecastCell", forIndexPath: indexPath) as! WeatherCellCollectionViewCell
         
-        cell.backgroundColor = UIColor.yellowColor()
+        cell.backgroundColor = UIColor.yellowColor().colorWithAlphaComponent(0.25)
         cell.label.text = "Today"
         // Configure the cell
         

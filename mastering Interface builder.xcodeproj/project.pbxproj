@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA2451BB1C9A26E600B1643F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2451BA1C9A26E600B1643F /* CollectionViewController.swift */; };
 		FA2451BD1C9A28CA00B1643F /* WeatherCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2451BC1C9A28CA00B1643F /* WeatherCellCollectionViewCell.swift */; };
 		FA6EF3C81C98DEAB0037FB7A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF3C71C98DEAB0037FB7A /* Launch Screen.storyboard */; };
 		FA91F9A61971D61B0006557A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F9A51971D61B0006557A /* AppDelegate.swift */; };
@@ -28,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA2451BA1C9A26E600B1643F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FA2451BC1C9A28CA00B1643F /* WeatherCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA6EF3C71C98DEAB0037FB7A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FA91F9A01971D61B0006557A /* mastering Interface builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mastering Interface builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +85,6 @@
 				FA91F9AC1971D61B0006557A /* Images.xcassets */,
 				FA91F9A31971D61B0006557A /* Supporting Files */,
 				FA6EF3C71C98DEAB0037FB7A /* Launch Screen.storyboard */,
-				FA2451BA1C9A26E600B1643F /* CollectionViewController.swift */,
 				FA2451BC1C9A28CA00B1643F /* WeatherCellCollectionViewCell.swift */,
 			);
 			path = "mastering Interface builder";
@@ -219,7 +216,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2451BB1C9A26E600B1643F /* CollectionViewController.swift in Sources */,
 				FA2451BD1C9A28CA00B1643F /* WeatherCellCollectionViewCell.swift in Sources */,
 				FA91F9A81971D61B0006557A /* ViewController.swift in Sources */,
 				FA91F9A61971D61B0006557A /* AppDelegate.swift in Sources */,

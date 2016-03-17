@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sunset" translatesAutoresizingMaskIntoConstraints="NO" id="pPS-mg-FYl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1q-aO-LKO">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                 <subviews>
@@ -28,13 +31,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Of Weather Forecast this is really long long place name to wrap" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faf-fs-Blc">
-                                        <rect key="frame" x="46" y="131" width="509" height="21"/>
+                                        <rect key="frame" x="46" y="131" width="509" height="20.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="faf-fs-Blc" firstAttribute="leading" secondItem="b1q-aO-LKO" secondAttribute="leading" constant="5" id="4NC-c3-pg7"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="faf-fs-Blc" secondAttribute="bottom" constant="10" id="FMu-Rw-EvQ"/>
@@ -44,7 +46,7 @@
                                     <constraint firstItem="faf-fs-Blc" firstAttribute="top" secondItem="b1q-aO-LKO" secondAttribute="top" constant="10" id="dqg-0i-xkE"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="faf-fs-Blc" secondAttribute="trailing" constant="10" id="f28-oM-zRv"/>
                                     <constraint firstItem="IW9-kM-TbZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="faf-fs-Blc" secondAttribute="trailing" constant="10" id="gXQ-ZL-hD9"/>
-                                    <constraint firstAttribute="height" constant="200" id="gtQ-8N-lCo">
+                                    <constraint firstAttribute="height" constant="200" identifier="HeaderHeight" id="gtQ-8N-lCo">
                                         <variation key="heightClass=compact" constant="100"/>
                                     </constraint>
                                     <constraint firstItem="IW9-kM-TbZ" firstAttribute="centerX" secondItem="b1q-aO-LKO" secondAttribute="centerX" id="hKb-Jh-dqV"/>
@@ -84,6 +86,7 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TSr-Dw-C2M">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="72"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="72" id="fud-6a-teA"/>
                                         </constraints>
@@ -141,7 +144,7 @@
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDp-8j-8jK" userLabel="ForecastList">
                                         <rect key="frame" x="0.0" y="72" width="600" height="185"/>
-                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.47308728448275861" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="185" id="LZd-Pz-dgK">
                                                 <variation key="heightClass=compact" constant="230"/>
@@ -149,24 +152,20 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DoI-yO-kYo" userLabel="CurrentConditions">
-                                        <rect key="frame" x="0.0" y="257" width="600" height="128"/>
-                                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="fr6-C8-RwV">
-                                                <variation key="heightClass=compact" constant="230"/>
-                                            </constraint>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="257" width="600" height="185"/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="0.42874461206896552" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.66666666669999997" blue="0.82945397129999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="DoI-yO-kYo" secondAttribute="bottom" id="8GK-rB-gkz"/>
                                     <constraint firstItem="DoI-yO-kYo" firstAttribute="width" secondItem="qDp-8j-8jK" secondAttribute="width" id="KQD-s6-uKm"/>
                                     <constraint firstAttribute="trailing" secondItem="TSr-Dw-C2M" secondAttribute="trailing" id="Nof-he-uj4"/>
+                                    <constraint firstItem="DoI-yO-kYo" firstAttribute="height" secondItem="qDp-8j-8jK" secondAttribute="height" identifier="ForecastListHeight" id="Wy1-Ie-e72"/>
                                     <constraint firstAttribute="trailing" secondItem="qDp-8j-8jK" secondAttribute="trailing" id="YnO-gv-ia6"/>
                                     <constraint firstItem="qDp-8j-8jK" firstAttribute="top" secondItem="TSr-Dw-C2M" secondAttribute="bottom" id="ZXx-bO-6dx"/>
                                     <constraint firstAttribute="trailing" secondItem="DoI-yO-kYo" secondAttribute="trailing" id="fFf-cu-O08"/>
                                     <constraint firstAttribute="bottom" secondItem="qDp-8j-8jK" secondAttribute="bottom" id="hr8-mA-7wl"/>
+                                    <constraint firstItem="TSr-Dw-C2M" firstAttribute="top" secondItem="Faj-G3-jJ7" secondAttribute="top" id="ij8-eJ-aHd"/>
                                     <constraint firstItem="DoI-yO-kYo" firstAttribute="leading" secondItem="qDp-8j-8jK" secondAttribute="trailing" id="pC9-XK-B8l"/>
                                     <constraint firstItem="TSr-Dw-C2M" firstAttribute="leading" secondItem="Faj-G3-jJ7" secondAttribute="leading" id="qBe-4N-G6i"/>
                                     <constraint firstItem="DoI-yO-kYo" firstAttribute="leading" secondItem="Faj-G3-jJ7" secondAttribute="leading" id="wxj-hN-QwW"/>
@@ -197,12 +196,15 @@
                             <constraint firstItem="b1q-aO-LKO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0U2-80-J5h"/>
                             <constraint firstAttribute="trailing" secondItem="b1q-aO-LKO" secondAttribute="trailing" id="3jj-da-x7T"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Faj-G3-jJ7" secondAttribute="bottom" id="7Hi-1X-jhw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pPS-mg-FYl" secondAttribute="bottom" id="AS9-Hl-n9S"/>
+                            <constraint firstItem="pPS-mg-FYl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DlL-KX-PYV"/>
                             <constraint firstItem="qDp-8j-8jK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Dyh-g8-4DD"/>
+                            <constraint firstAttribute="trailing" secondItem="pPS-mg-FYl" secondAttribute="trailing" id="Et6-BG-gtX"/>
                             <constraint firstItem="b1q-aO-LKO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TB5-lF-EmT"/>
-                            <constraint firstItem="TSr-Dw-C2M" firstAttribute="top" secondItem="b1q-aO-LKO" secondAttribute="bottom" id="eCQ-Az-eN9"/>
                             <constraint firstItem="Faj-G3-jJ7" firstAttribute="top" secondItem="b1q-aO-LKO" secondAttribute="bottom" id="jCt-tg-7hT"/>
                             <constraint firstItem="TSr-Dw-C2M" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="pay-Az-VT4"/>
                             <constraint firstAttribute="trailing" secondItem="Faj-G3-jJ7" secondAttribute="trailing" id="qQt-eu-IaE"/>
+                            <constraint firstItem="pPS-mg-FYl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tvI-fo-N8X"/>
                             <constraint firstItem="Faj-G3-jJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ybl-OZ-yFy"/>
                         </constraints>
                         <variation key="default">
@@ -226,4 +228,7 @@
             <point key="canvasLocation" x="360" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sunset" width="4032" height="3024"/>
+    </resources>
 </document>
